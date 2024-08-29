@@ -10,7 +10,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #0a5e2d;
+            background-color: #060316;
         }
         .container {
             display: flex;
@@ -36,11 +36,31 @@
             max-width: 100px;
             margin-right: 20px; 
         }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .button-group button {
+            width: 48%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: blue;
+            color: white;
+        }
+        .reset-btn {
+            background-color: red;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="wrapper">
-
         <div class="container">
             <h1>Cadastro</h1>
             <form>
@@ -53,20 +73,20 @@
                 <hr>
                 <h3>Gênero:</h3>
                 <label for="Gênero">Masculino</label>
-                <input type="checkbox" id="Gênero" name="Gênero" >
+                <input type="checkbox" id="Gênero" name="Gênero">
                 <label for="Gênero">Feminino</label>
-                <input type="checkbox" id="Gênero" name="Gênero" >
+                <input type="checkbox" id="Gênero" name="Gênero">
                 <label for="Gênero">Outro</label>
-                <input type="checkbox" id="Gênero" name="Gênero" ><br><br>
+                <input type="checkbox" id="Gênero" name="Gênero"><br><br>
                 <label for="file">Upload de arquivo</label>
                 <input type="file" id="file" name="file"><br><br>
                 <label for="Data">Data de nascimento:</label>
                 <input type="date" id="Data" name="Data" required><br><br>
                 
-                <button  type="submit" class="btn btn-primary" subm="" a href="LoginP.html"></a>Cadastrar-se</button>
-                
-                
-                
+                <div class="button-group">
+                    <button type="submit" class="submit-btn">Enviar</button>
+                    <button type="reset" class="reset-btn">Limpar</button>
+                </div>
             </form>
         </div>
     </div>
